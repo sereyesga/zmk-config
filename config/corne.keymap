@@ -58,12 +58,12 @@
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ^   |      |      |      |      |     |   | "^" |  &  |  $  |  (  |  )  | BKSP |
-// |  ^   | BT_0 | BT_1 | BT_2 | BT_3 |     |   |  @  |  !  |  \  |  [  |  ]  |  `   |
-// |      |      |BT_PRV|BT_NXT|      |     |   |  _  |  #  | "|" |  {  |  }  |  ~   |
+// |  ^   |      |      |OUT_TG|      |      |   | "^" |  &  |  $  |  (  |  )  | BKSP |
+// |  ^   | BT_1 | BT_2 | BT_3 | BT_4 | BT_5 |   |  @  |  !  |  \  |  [  |  ]  |  `   |
+// |      |      |BT_PRV|BT_NXT|      |      |   |  _  |  #  | "|" |  {  |  }  |  ~   |
 //                      |  GUI |      | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans &none        &none        &none        &none        &none             &kp CARET &kp AMPS  &kp DLLR &kp LPAR &kp RPAR &kp BSPC
+   &trans &none        &none        &out OUT_TOG &none        &none             &kp CARET &kp AMPS  &kp DLLR &kp LPAR &kp RPAR &kp BSPC
    &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp AT    &kp EXCL  &kp BSLH &kp LBKT &kp RBKT &kp GRAVE
    &trans &trans       &bt BT_PRV   &bt BT_NXT   &none        &none             &kp UNDER &kp HASH  &kp PIPE &kp LBRC &kp RBRC &kp TILDE
                                     &trans       &none        &trans            &trans    &trans    &trans
